@@ -1,18 +1,207 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Лет ми спик фром май харт</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
+<head>
+    <meta charset="utf-8">
+    <title>Лет ми спик фром май харт</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- Поле для фильтрации по городу -->
+<p>Фильтрация по городу отправления:</p>
+    <input
+        class="search"
+        type="text"
+        placeholder="Город"
+        value=""
+        onkeyup="this.setAttribute('value', this.value)">
 
-        <!-- Здесь применять вашу самую сильную магию -->
-    </body>
+<!-- Здесь применять вашу самую сильную магию -->
+<p><table>
+    <colgroup>
+        <col id="color">
+    </colgroup>
+    <tr>
+        <th>Type</th>
+        <th colspan="2" align="center">Airline</th>
+        <th>Scheduled</th>
+        <th>Airport</th>
+        <th>Flight</th>
+        <th>Aircraft Type</th>
+        <th>Status</th>
+        <th>Terminal</th>
+    </tr>
+    <tr>
+        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
+        <td><img src="thai_logo.jpg" alt="Thai Airways"></td>
+        <td>Thai Airways</td>
+        <td>16:45</td>
+        <td>Phuket</td>
+        <td>274</td>
+        <td>Airbus Industrie A330-300</td>
+        <td>landed at 16:56</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="ural.jpg" alt="Ural Airlines"></td>
+        <td>Ural Airlines</td>
+        <td>00:05</td>
+        <td>Ekaterinburg</td>
+        <td>4430</td>
+        <td>Airbus Industrie A321</td>
+        <td>departed</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
+        <td><img src="Air_France_logo.jpg" alt="Air France"></td>
+        <td>Air France</td>
+        <td>10:55</td>
+        <td>Krasnoyarsk</td>
+        <td>4907</td>
+        <td>Airbus Industrie A330-300</td>
+        <td>expected at 00:05</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
+        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
+        <td>Aeroflot Russian Airlines</td>
+        <td>15:55</td>
+        <td>Novosibirsk</td>
+        <td>1463</td>
+        <td>Airbus Industrie A330-300</td>
+        <td>cancelled</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="Pegas_Fly.png" alt="Pegas Fly"></td>
+        <td>Pegas Fly</td>
+        <td>23:30</td>
+        <td>Rayong</td>
+        <td>2425</td>
+        <td>Boeing 767-300 Passenger</td>
+        <td>check in</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
+        <td><img src="LOT_full.jpg" alt="LOT - Polish Airlines"></td>
+        <td>LOT - Polish Airlines</td>
+        <td>22:40</td>
+        <td>Warsaw</td>
+        <td>5675</td>
+        <td>Airbus Industrie A320</td>
+        <td>landed at 22:24</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
+        <td>Aeroflot Russian Airlines</td>
+        <td>22:45</td>
+        <td>Minsk</td>
+        <td>1834</td>
+        <td>Airbus Industrie A320</td>
+        <td>boarding</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
+        <td><img src="RoyalFlight.jpg" alt="Royal Flight Airlines"></td>
+        <td>Royal Flight Airlines</td>
+        <td>22:55</td>
+        <td>Antalya</td>
+        <td>7706</td>
+        <td>Airbus Industrie A330-300</td>
+        <td>expected at 23:01</td>
+        <td>C</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
+        <td>Aeroflot Russian Airlines</td>
+        <td>22:30</td>
+        <td>Karaganda</td>
+        <td>1936</td>
+        <td>Airbus Industrie A320</td>
+        <td>boarding is over</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="czechairlines1.png" alt="CSA Czech Airlines"></td>
+        <td>CSA Czech Airlines</td>
+        <td>21:25</td>
+        <td>Prague</td>
+        <td>905</td>
+        <td>Airbus Industrie A319</td>
+        <td>departed</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
+        <td><img src="s7.gif" alt="S7 Airlines"></td>
+        <td>S7 Airlines</td>
+        <td>23:15</td>
+        <td>Stavropol</td>
+        <td>5397</td>
+        <td>Airbus Industrie A319</td>
+        <td>landed at 22:52</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
+        <td>Aeroflot Russian Airlines</td>
+        <td>23:50</td>
+        <td>Voronezh</td>
+        <td>1352</td>
+        <td>Sukhoi Superjet 100-90</td>
+        <td>delayed till 03:40</td>
+        <td>D</td>
+    </tr>
+    <tr>
+        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
+        <td><img src="icelandair_big.jpg" alt="Icelandair"></td>
+        <td>Icelandair</td>
+        <td>23:35</td>
+        <td>Stockholm</td>
+        <td>7222</td>
+        <td>Airbus Industrie A320</td>
+        <td>expected at 23:30</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="145.jpg" alt="Air Astana"></td>
+        <td>Air Astana</td>
+        <td>22:40</td>
+        <td>Astana</td>
+        <td>874</td>
+        <td>Airbus Industrie A321</td>
+        <td>boarding is over</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img src="Departure_Icon.png" alt="Departure"></td>
+        <td><img src="KLM_full.jpg" alt="KLM—Royal Dutch Airlines"></td>
+        <td>KLM—Royal Dutch Airlines</td>
+        <td>22:00</td>
+        <td>Sochi</td>
+        <td>3204</td>
+        <td>Airbus Industrie A321</td>
+        <td>departed</td>
+        <td>A</td>
+    </tr>
+</table>
+<p>Чтобы получить смс-сообщение с информацией о рейсе заполните форму:</p>
+<form>
+    <input type="tel" placeholder="8**********" pattern="8[0-9]{10}" required>
+    <input type="email" placeholder="Email" required><br>
+    <button type="submit">Отправить</button>
+</form>
+
+</body>
 </html>
