@@ -7,32 +7,91 @@
 </head>
 <body>
 <!-- Поле для фильтрации по городу -->
-<p>Фильтрация по городу отправления:</p>
+<!--<p>Фильтрация по городу отправления:</p>
     <input
         class="search"
         type="text"
         placeholder="Город"
         value=""
-        onkeyup="this.setAttribute('value', this.value)">
-
+        onkeyup="this.setAttribute('value', this.value)">-->
 <!-- Здесь применять вашу самую сильную магию -->
-<p><table>
-    <colgroup>
-        <col id="color">
-    </colgroup>
+<p><table class="board">
     <tr>
-        <th>Type</th>
-        <th colspan="2" align="center">Airline</th>
-        <th>Scheduled</th>
-        <th>Airport</th>
-        <th>Flight</th>
-        <th>Aircraft Type</th>
-        <th>Status</th>
-        <th>Terminal</th>
+            <th>TYPE</th>
+        <th colspan="2" align="center">AIRLINE</th>
+        <th>SCHEDULED</th>
+        <th>AIRPORT</th>
+        <th>FLIGHT</th>
+        <th>AIRCRAFT TYPE</th>
+        <th>STATUS</th>
+        <th>TERMINAL</th>
     </tr>
     <tr>
-        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
-        <td><img src="thai_logo.jpg" alt="Thai Airways"></td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/2/l/0/b/k/arrivals-airport-sign-md.png"
+                alt="Arrival">
+        </td>
+        <td><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/ru/e/e8/Royal_Flight_logo.png"
+                alt="Royal Flight Airlines">
+        </td>
+        <td>Royal Flight Airlines</td>
+        <td>15:55</td>
+        <td>Novosibirsk</td>
+        <td>1463</td>
+        <td>Airbus Industrie A330-300</td>
+        <td>cancelled</td>
+        <td>F</td>
+    </tr>
+    <tr>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-hi.png"
+                alt="Departure">
+        </td>
+        <td><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/ru/thumb/1/1c/KLM-Royal-Dutch-Airlines-Logo_svg.png/255px-KLM-Royal-Dutch-Airlines-Logo_svg.png"
+                alt="KLM—Royal Dutch Airlines">
+        </td>
+        <td>KLM — Royal Dutch Airlines</td>
+        <td>00:05</td>
+        <td>Ekaterinburg</td>
+        <td>4430</td>
+        <td>Airbus Industrie A321</td>
+        <td>departed</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/2/l/0/b/k/arrivals-airport-sign-hi.png"
+                alt="Arrival">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/6/68/S7_Airlines_logo.svg/255px-S7_Airlines_logo.svg.png"
+                 alt="S7 Airlines">
+        </td>
+        <td>S7 Airlines</td>
+        <td>10:55</td>
+        <td>Krasnoyarsk</td>
+        <td>4907</td>
+        <td>Airbus Industrie A330-300</td>
+        <td>expected at 00:05</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/2/l/0/b/k/arrivals-airport-sign-md.png"
+                alt="Arrival">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9a/Thai-Airlines-Logo.svg/744px-Thai-Airlines-Logo.svg.png"
+                 alt="Thai Airways">
+        </td>
         <td>Thai Airways</td>
         <td>16:45</td>
         <td>Phuket</td>
@@ -42,42 +101,16 @@
         <td>D</td>
     </tr>
     <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="ural.jpg" alt="Ural Airlines"></td>
-        <td>Ural Airlines</td>
-        <td>00:05</td>
-        <td>Ekaterinburg</td>
-        <td>4430</td>
-        <td>Airbus Industrie A321</td>
-        <td>departed</td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
-        <td><img src="Air_France_logo.jpg" alt="Air France"></td>
-        <td>Air France</td>
-        <td>10:55</td>
-        <td>Krasnoyarsk</td>
-        <td>4907</td>
-        <td>Airbus Industrie A330-300</td>
-        <td>expected at 00:05</td>
-        <td>B</td>
-    </tr>
-    <tr>
-        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
-        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
-        <td>Aeroflot Russian Airlines</td>
-        <td>15:55</td>
-        <td>Novosibirsk</td>
-        <td>1463</td>
-        <td>Airbus Industrie A330-300</td>
-        <td>cancelled</td>
-        <td>F</td>
-    </tr>
-    <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="Pegas_Fly.png" alt="Pegas Fly"></td>
-        <td>Pegas Fly</td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-md.png"
+                alt="Departure">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/6/68/S7_Airlines_logo.svg/255px-S7_Airlines_logo.svg.png"
+                 alt="S7 Airlines">
+        </td>
+        <td>S7 Airlines</td>
         <td>23:30</td>
         <td>Rayong</td>
         <td>2425</td>
@@ -86,8 +119,15 @@
         <td>C</td>
     </tr>
     <tr>
-        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
-        <td><img src="LOT_full.jpg" alt="LOT - Polish Airlines"></td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/2/l/0/b/k/arrivals-airport-sign-md.png"
+                alt="Arrival">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/4/47/LOT_Polish_Airlines_logo.svg/255px-LOT_Polish_Airlines_logo.svg.png"
+                 alt="LOT - Polish Airlines">
+        </td>
         <td>LOT - Polish Airlines</td>
         <td>22:40</td>
         <td>Warsaw</td>
@@ -97,9 +137,17 @@
         <td>F</td>
     </tr>
     <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
-        <td>Aeroflot Russian Airlines</td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-md.png"
+                alt="Departure">
+        </td>
+        <td><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/ru/e/e8/Royal_Flight_logo.png"
+                alt="Royal Flight Airlines">
+        </td>
+        <td>Royal Flight Airlines</td>
         <td>22:45</td>
         <td>Minsk</td>
         <td>1834</td>
@@ -108,8 +156,34 @@
         <td>B</td>
     </tr>
     <tr>
-        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
-        <td><img src="RoyalFlight.jpg" alt="Royal Flight Airlines"></td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-md.png"
+                alt="Departure">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9a/Thai-Airlines-Logo.svg/744px-Thai-Airlines-Logo.svg.png"
+                 alt="Thai Airways">
+        </td>
+        <td>Thai Airways</td>
+        <td>22:30</td>
+        <td>Bangkok</td>
+        <td>1936</td>
+        <td>Airbus Industrie A320</td>
+        <td>boarding is over</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/2/l/0/b/k/arrivals-airport-sign-md.png"
+                alt="Arrival">
+        </td>
+        <td><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/ru/e/e8/Royal_Flight_logo.png"
+                alt="Royal Flight Airlines">
+        </td>
         <td>Royal Flight Airlines</td>
         <td>22:55</td>
         <td>Antalya</td>
@@ -119,20 +193,17 @@
         <td>C</td>
     </tr>
     <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
-        <td>Aeroflot Russian Airlines</td>
-        <td>22:30</td>
-        <td>Karaganda</td>
-        <td>1936</td>
-        <td>Airbus Industrie A320</td>
-        <td>boarding is over</td>
-        <td>B</td>
-    </tr>
-    <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="czechairlines1.png" alt="CSA Czech Airlines"></td>
-        <td>CSA Czech Airlines</td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-md.png"
+                alt="Departure">
+        </td>
+        <td><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/ru/thumb/1/1c/KLM-Royal-Dutch-Airlines-Logo_svg.png/255px-KLM-Royal-Dutch-Airlines-Logo_svg.png"
+                alt="KLM—Royal Dutch Airlines">
+        </td>
+        <td>KLM — Royal Dutch Airlines</td>
         <td>21:25</td>
         <td>Prague</td>
         <td>905</td>
@@ -141,8 +212,15 @@
         <td>F</td>
     </tr>
     <tr>
-        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
-        <td><img src="s7.gif" alt="S7 Airlines"></td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/2/l/0/b/k/arrivals-airport-sign-md.png"
+                alt="Arrival">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/6/68/S7_Airlines_logo.svg/255px-S7_Airlines_logo.svg.png"
+                 alt="S7 Airlines">
+        </td>
         <td>S7 Airlines</td>
         <td>23:15</td>
         <td>Stavropol</td>
@@ -152,9 +230,16 @@
         <td>B</td>
     </tr>
     <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="aeroflot_logo_0.jpg" alt="Aeroflot Russian Airlines"></td>
-        <td>Aeroflot Russian Airlines</td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-md.png"
+                alt="Departure">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/4/47/LOT_Polish_Airlines_logo.svg/255px-LOT_Polish_Airlines_logo.svg.png"
+                 alt="LOT - Polish Airlines">
+        </td>
+        <td>LOT - Polish Airlines</td>
         <td>23:50</td>
         <td>Voronezh</td>
         <td>1352</td>
@@ -163,20 +248,35 @@
         <td>D</td>
     </tr>
     <tr>
-        <td><img src="Arrival_Icon.png" alt="Arrival"></td>
-        <td><img src="icelandair_big.jpg" alt="Icelandair"></td>
-        <td>Icelandair</td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/2/l/0/b/k/arrivals-airport-sign-md.png"
+                alt="Arrival">
+        </td>
+        <td><img class="logo"
+                 src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/9a/Thai-Airlines-Logo.svg/744px-Thai-Airlines-Logo.svg.png"
+                 alt="Thai Airways">
+        </td>
+        <td>Thai Airways</td>
         <td>23:35</td>
-        <td>Stockholm</td>
+        <td>Phuket</td>
         <td>7222</td>
         <td>Airbus Industrie A320</td>
         <td>expected at 23:30</td>
         <td>B</td>
     </tr>
     <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="145.jpg" alt="Air Astana"></td>
-        <td>Air Astana</td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-md.png"
+                alt="Departure">
+        </td>
+        <td><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/ru/thumb/4/47/LOT_Polish_Airlines_logo.svg/255px-LOT_Polish_Airlines_logo.svg.png"
+                alt="LOT - Polish Airlines">
+        </td>
+        <td>LOT - Polish Airlines</td>
         <td>22:40</td>
         <td>Astana</td>
         <td>874</td>
@@ -185,9 +285,17 @@
         <td>B</td>
     </tr>
     <tr>
-        <td><img src="Departure_Icon.png" alt="Departure"></td>
-        <td><img src="KLM_full.jpg" alt="KLM—Royal Dutch Airlines"></td>
-        <td>KLM—Royal Dutch Airlines</td>
+        <td><img
+                class="type"
+                src="http://www.clker.com/cliparts/B/X/8/8/p/r/departures-airport-sign-md.png"
+                alt="Departure">
+        </td>
+        <td><img
+                class="logo"
+                src="https://upload.wikimedia.org/wikipedia/ru/thumb/1/1c/KLM-Royal-Dutch-Airlines-Logo_svg.png/255px-KLM-Royal-Dutch-Airlines-Logo_svg.png"
+                alt="KLM—Royal Dutch Airlines">
+        </td>
+        <td>KLM — Royal Dutch Airlines</td>
         <td>22:00</td>
         <td>Sochi</td>
         <td>3204</td>
@@ -196,12 +304,21 @@
         <td>A</td>
     </tr>
 </table>
-<p>Чтобы получить смс-сообщение с информацией о рейсе заполните форму:</p>
-<form>
-    <input type="tel" placeholder="8**********" pattern="8[0-9]{10}" required>
-    <input type="email" placeholder="Email" required><br>
-    <button type="submit">Отправить</button>
+<p>
+<form class="feedback">
+    <p>Чтобы получить смс-сообщение с информацией о рейсе заполните форму:</p>
+        <label for="tel">Телефон:</label>
+        <input id="tel"
+               type="tel"
+               placeholder="8**********"
+               pattern="8[0-9]{10}"
+               required><br><br>
+        <label for="tel">Email:</label>
+        <input type="email"
+               placeholder="Email"
+               pattern="[_\-a-z0-9]+@[_\-a-z0-9]+(\.[a-z0-9]+)?(\.[a-z]+)"
+               required><br><br>
+        <button type="submit">Отправить данные о рейсе на телефон</button>
 </form>
-
 </body>
 </html>
